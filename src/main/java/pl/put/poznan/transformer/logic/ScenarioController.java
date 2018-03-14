@@ -1,6 +1,5 @@
 package pl.put.poznan.transformer.logic;
 
-import java.io.FileNotFoundException;
 import java.util.List;
 
 /**
@@ -10,7 +9,6 @@ public class ScenarioController
 {
 
     private Scenario mainScenario; // list of lines in scenario
-    private final String[] KEYWORDS = {"IF", "ELSE", "FOR EACH"};
 
     public ScenarioController()
     {
@@ -38,16 +36,6 @@ public class ScenarioController
         setMainScenario(mainScenario);
     }
 
-    /*public void loadFromJson(String json)
-    {
-        mainScenario = new Gson().fromJson(json, Scenario.class);
-    }
-
-    public String saveAsJson()
-    {
-        return new Gson().toJson(mainScenario);
-    }*/
-
     public void setMainScenario(Scenario mainScenario)
     {
         this.mainScenario = mainScenario;
@@ -57,22 +45,6 @@ public class ScenarioController
     {
         return mainScenario;
     }
-
-    public ScenarioController(String[] scenario)
-    {
-        // zostawilem aby czesc restowa dzialala
-    }
-
-    public ScenarioController(String fileName) throws FileNotFoundException
-    {
-        //TODO
-    }
-
-    /*public String transform(String text)
-    {
-        // of course normally it would to something based on transforms
-        return text.toUpperCase();
-    }*/
 
     /**
      * Counts the number of steps in the main scenario

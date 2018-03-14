@@ -8,7 +8,6 @@ import pl.put.poznan.transformer.logic.ScenarioController;
 @RestController
 public class TextTransformerController {
 
-    private static final Logger logger = LoggerFactory.getLogger(TextTransformerController.class);
     private static final ScenarioController controller = new ScenarioController();
 
 

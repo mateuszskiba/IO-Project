@@ -2,10 +2,8 @@ package pl.put.poznan.transformer.logic;
 
 public class Step {
     private String content;
-    private Scenario subScenario; //can be null
+    private Scenario subScenario;
 
-    public Step() {
-    }
 
     public Step(String content) {
         this.content = content;
@@ -18,10 +16,6 @@ public class Step {
 
     public String getContent() {
         return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
     }
 
     public Scenario getSubScenario() {

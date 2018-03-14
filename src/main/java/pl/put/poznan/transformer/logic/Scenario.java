@@ -12,11 +12,6 @@ public class Scenario {
     public List<Step> getSteps() {
         return steps;
     }
-
-    public void setSteps(List<Step> steps) {
-        this.steps = steps;
-    }
-
     public void addStep(Step step) {
         steps.add(step);
     }

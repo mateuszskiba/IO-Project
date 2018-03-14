@@ -4,9 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 
-/**
- * Created by Tomek on 21.01.2018.
- */
 public class StepsNoActorScenarioVisitor implements ScenarioVisitor {
     private List<Step> stepsNoActorList = new ArrayList<Step>();;
     private final String[] KEYWORDS = {"IF", "ELSE", "FOR EACH"};

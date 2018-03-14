@@ -2,9 +2,6 @@ package pl.put.poznan.transformer.logic;
 
 import java.util.List;
 
-/**
- * Created by ns on 08.01.18.
- */
 public class CountStepsScenarioVisitor implements ScenarioVisitor
 {
     private int counter = 0;
